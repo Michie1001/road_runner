@@ -1,0 +1,22 @@
+{
+  "name": "road_runner",
+  "version": "1.0.0",
+  "description": "Landing page for road_runner",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michie1001/road_runner.git"
+  },
+  "author": "michelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michie1001/road_runner/issues"
+  },
+  "homepage": "https://github.com/Michie1001/road_runner#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
