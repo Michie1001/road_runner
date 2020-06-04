@@ -1,0 +1,20 @@
+
+
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: inherit;
+}
+
+html{
+	font-size: 62.5%; /*for accessibility where the user whats to 
+	zoom on our page..so what you want to make your default size 
+	(10px in my case) divided by the default font-size (16px) 
+	multiplied by 100%*/
+}
+
+body {
+	box-sizing: border-box;
+}
