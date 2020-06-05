@@ -84,8 +84,11 @@ body {
     transform: skewX(-5deg);
     text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1); }
 
-.center-text {
+.u-center-text {
   text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
 
 .button:link, .button:visited {
   text-transform: uppercase;
