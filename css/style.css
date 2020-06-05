@@ -81,7 +81,7 @@ body {
   letter-spacing: .2rem;
   transition: all .2s; }
   .heading-secondary:hover {
-    transform: skewX(8deg);
+    transform: skewX(-5deg);
     text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1); }
 
 .center-text {
@@ -134,7 +134,30 @@ body {
     text-align: center; }
 
 .row {
-  max-width: 114rem; }
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .about {
   background-color: #f7f7f7;
