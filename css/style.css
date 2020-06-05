@@ -84,11 +84,27 @@ body {
     transform: skewX(-5deg);
     text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1); }
 
+.heading-tetiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .button:link, .button:visited {
   text-transform: uppercase;
@@ -115,6 +131,19 @@ body {
 .button--animated {
   animation: moveInBottom 1.5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.button-text:link, .button-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px; }
+
+.button-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
 .header {
   height: 95vh;
@@ -164,5 +193,5 @@ body {
 
 .about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 12rem;
   margin-top: -20vh; }
