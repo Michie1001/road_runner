@@ -24,7 +24,12 @@
 
 	&--white {
 		background-color: $color-white;
-		color: #777;
+		color: $color-grey-dark;
+	}
+
+	&--green {
+		background-color: $color-primary;
+		color: $color-white;
 	}
 
 	&--animated{
