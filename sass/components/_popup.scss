@@ -12,7 +12,22 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		background-color: $color-white;
-		width: 70%;
+		box-shadow: 0 2rem 4rem rgba($color-black, .2);
+		border-radius: 3px;
+		width: 75%;
 		height: 40vh;
 	}
+	&__left{
+
+	}
+	&__right{
+
+	}
+	&__img{
+
+	}
+	&__text{
+
+	}
+	
 }
