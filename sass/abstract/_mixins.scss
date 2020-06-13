@@ -5,3 +5,7 @@
         clear: both;
     }
 }
+
+@mixin phones {
+	@content
+}
