@@ -13,6 +13,16 @@ html{
 	zoom on our page..so what you want to make your default size 
 	(10px in my case) divided by the default font-size (16px) 
 	multiplied by 100%*/
+
+	@include respond(tab-land) {
+		font-size: 56.25%; //1rem == 9px
+	}
+	@include respond(tab-port) {
+		font-size: 50%; //1rem == 8
+	}
+	@include respond(big) {
+		font-size: 75%; //1rem=12px, 12/16 * 100 = 75
+	}
 }
 
 body {

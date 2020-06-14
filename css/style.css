@@ -1,3 +1,13 @@
+/*
+	>>>>>>>>>>>>MEDIA QUERY MANAGER <<<<<<<<<<<<<
+
+	0-600px - phones
+	600-900px - Potrait mode tablets
+	900-1200px - landscape mode tablets
+	1200-1800px - laptops
+	1800px and above - for tvs and large screens
+
+*/
 *,
 *::after,
 *::before {
@@ -10,7 +20,55 @@ html {
   /*for accessibility where the user whats to 
 	zoom on our page..so what you want to make your default size 
 	(10px in my case) divided by the default font-size (16px) 
-	multiplied by 100%*/ }
+	multiplied by 100%*/
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
