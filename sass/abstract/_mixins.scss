@@ -6,6 +6,46 @@
     }
 }
 
-@mixin phones {
-	@content
+
+/*
+	>>>>>>>>>>>>MEDIA QUERY MANAGER <<<<<<<<<<<<<
+
+	0-600px - phones
+	600-900px - Potrait mode tablets
+	900-1200px - landscape mode tablets
+	1200-1800px - laptops
+	1800px and above - for tvs and large screens
+
+*/
+
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == phones {
+		@media (max-width: 37.5em) { @content };
+		//600/16=37.5
+	}
+	@if $breakpoint == tab-port {
+		@media (max-width: 56.25em) { @content };
+	}
+	@if $breakpoint == tab-land {
+		@media (max-width: 75em) { @content };
+	}
+	@if $breakpoint == big {
+		@media (min-width: 112.5em) { @content };
+	}
+	
+/*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/
+
 }
