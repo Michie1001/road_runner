@@ -788,7 +788,23 @@ body {
       padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 8rem; }
+    margin-bottom: 8rem;
+    /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -1037,30 +1053,110 @@ body {
 .about {
   background-color: #f7f7f7;
   padding: 25rem 12rem;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 56.25em) {
+    .about {
+      padding: 20rem 0; } }
 
 .features {
   padding: 20rem 0;
   margin-top: -10rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-7deg); }
+  transform: skewY(-7deg);
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
   .features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .features {
+      padding: 15rem 0; } }
 
 .tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
-  margin-top: -10rem; }
+  margin-top: -10rem;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 56.25em) {
+    .tours {
+      padding: 20rem 0 10rem 0; } }
 
 .stories {
   position: relative;
   padding: 15rem 0;
-  overflow: hidden; }
+  overflow: hidden;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 56.25em) {
+    .stories {
+      padding: 10rem 0; } }
 
 .booking {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 56.25em) {
+    .booking {
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
