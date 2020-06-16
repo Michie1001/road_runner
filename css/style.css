@@ -433,7 +433,23 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform .3s;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 10rem 0; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -448,7 +464,20 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
   .card__side {
     height: 52rem;
     transition: all .8s ease;
@@ -537,6 +566,35 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+        transform: translate(0);
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .story {
   width: 75%;
