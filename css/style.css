@@ -736,7 +736,20 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s; }
+  transition: all .3s;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -745,6 +758,9 @@ body {
     border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
 
 .form__label {
   font-size: 1.3rem;
@@ -761,7 +777,24 @@ body {
 
 .form__radio-group {
   width: 49%;
-  display: inline-block; }
+  display: inline-block;
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -1391,7 +1424,72 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  height: 50rem; }
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/
+  /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+      background-size: cover; } }
   .book__form {
     width: 50%;
-    padding: 4rem 6rem; }
+    padding: 4rem 6rem;
+    /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/
+    /*
+
+	note: it's good practice to use relative units in media 
+	queries too. BUT NOT REMS because it doesn't use the root
+	font size defined in our styles, it prioritizes the 
+	default browser font size and ain't nobody want that *shrug*
+
+	Ems on the other hand, are ideal and I'm not sure why but 
+	I would do my research later.
+
+
+	1em = 16px.....so the max-width divided by 16px
+*/ }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
