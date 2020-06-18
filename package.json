@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
     "compile:sass": "node-sass sass/main.scss css/comp.css",
-    "concat:sass": "-o css/concatd.css css/comp.css css/icons.css"
+    "concat:css": "concat -o css/concatd.css css/comp.css css/icons.css",
+    "pre:css": "postcss --use autoprefixer -b 'last 10 versions' css/concatd.css -o css/prex.css",
+    "compr:css": "node-sass css/concatd.css css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css compr:css"
   },
   "repository": {
     "type": "git",
@@ -19,7 +25,10 @@
   },
   "homepage": "https://github.com/Michie1001/road_runner#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.0",
     "concat": "^1.0.3",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
   }
 }
