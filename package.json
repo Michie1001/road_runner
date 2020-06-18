@@ -9,7 +9,7 @@
     "start": "npm-run-all --parallel devserver watch:sass",
 
     "compile:sass": "node-sass sass/main.scss css/comp.css",
-    "concat:css": "concat -o css/concatd.css css/comp.css css/icons.css",
+    "concat:css": "concat -o css/concatd.css css/icons.css css/comp.css",
     "pre:css": "postcss --use autoprefixer -b 'last 10 versions' css/concatd.css -o css/prex.css",
     "compr:css": "node-sass css/concatd.css css/style.min.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css compr:css"
