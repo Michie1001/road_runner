@@ -4,7 +4,9 @@
   "description": "Landing page for road_runner",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/comp.css",
+    "concat:sass": "-o css/concatd.css css/comp.css css/icons.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/Michie1001/road_runner#readme",
   "devDependencies": {
+    "concat": "^1.0.3",
     "node-sass": "^4.14.1"
   }
 }
